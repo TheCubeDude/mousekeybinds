@@ -1,7 +1,7 @@
 # mousekeybinds
 This program lets mouse clicks be bound to key presses. As of the current version, it's designed primarily with Magic Cube 7D functionality in mind.
 
-Binding a key:
+How to bind a key:
 1. Press Ctrl-B
 2. Move the cursor to the desired position
 3. Press the desired key
