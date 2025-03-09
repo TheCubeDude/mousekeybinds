@@ -10,8 +10,13 @@ This will create two keybinds for the key. The first is the specified key by its
 As of the current version, editing keybinds is not possible, so if you make an error, close the program and reopen it.
 
 Planned features:
+
 Ability to unbind keys
+
 Automatic piece filter configuration keybind support
+
 Support for other mouse-controlled hypercubing programs, such as Magic Cube 4D, Magic Cube 5D, Magic Puzzle Ultimate, and Magic Tile.
+
 Single key press binds
+
 Presets
