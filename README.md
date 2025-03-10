@@ -1,4 +1,7 @@
 # mousekeybinds
+
+[Download for Windows](https://github.com/TheCubeDude/mousekeybinds/releases/latest/download/binds.exe)
+
 This program lets mouse clicks be bound to key presses. As of the current version, it's designed primarily with Magic Cube 7D functionality in mind.
 
 How to bind a key:
