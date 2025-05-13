@@ -4,6 +4,8 @@
 
 This program lets mouse clicks be bound to key presses. As of the current version, it's designed primarily with Magic Cube 7D functionality in mind.
 
+## Usage
+
 How to bind a key:
 1. Press Ctrl-B
 2. Move the cursor to the desired position
@@ -12,7 +14,7 @@ This will create two keybinds for the key. The first is the specified key by its
 
 As of the current version, editing keybinds is not possible, so if you make an error, close the program and reopen it.
 
-Planned features:
+## Planned features:
 
 Ability to unbind keys
 
@@ -23,3 +25,11 @@ Support for other mouse-controlled hypercubing programs, such as Magic Cube 4D, 
 Single key press binds
 
 Presets
+
+## Building
+
+```sh
+poetry build
+```
+
+Executable will be in the `dist` folder.
