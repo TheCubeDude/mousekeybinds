@@ -18,4 +18,4 @@ requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry-pyinstaller-plugin.scripts]
-mousekeybinds = { source = "src/binds.py", type = "onefile", bundle = false }
+mousekeybinds = { source = "src/mousekeybinds/binds.py", type = "onefile", bundle = false }
