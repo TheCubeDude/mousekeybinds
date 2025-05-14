@@ -9,7 +9,7 @@ def click(x, ev: keyboard.KeyboardEvent):
     if pause:
         return
 
-    print(modifiers, ev.name)
+    print(modifiers or "", ev.name)
 
     for key in modifiers:
         pyautogui.keyDown(key)
@@ -54,6 +54,7 @@ def bindModifier():
 def main():
     print("ctrl+b to bind a hotkey")
     print("ctrl+shift+b to bind a modifier key")
+    print("ctrl+p to pause/resume hotkeys")
     print("")
 
     global pause
