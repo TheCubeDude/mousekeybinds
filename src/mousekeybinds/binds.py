@@ -3,8 +3,12 @@ import keyboard
 import time
 
 modifiers = set()
+pause = False
 
 def click(x, ev: keyboard.KeyboardEvent):
+    if pause:
+        return
+
     print(modifiers, ev.name)
 
     for key in modifiers:
@@ -17,6 +21,9 @@ def click(x, ev: keyboard.KeyboardEvent):
     modifiers.clear()
 
 def holdModifier(key):
+    if pause:
+        return
+
     print(f"Holding {key}")
     modifiers.add(key)
 
@@ -49,11 +56,15 @@ def main():
     print("ctrl+shift+b to bind a modifier key")
     print("")
 
+    global pause
     while True:
         hotkey = keyboard.read_hotkey(suppress=False)
         if hotkey == "ctrl+b":
             bindClick()
         if hotkey == "ctrl+shift+B":
             bindModifier()
+        if hotkey == "ctrl+p":
+            print("Pausing" if not pause else "Resuming")
+            pause = not pause
 
 main()
