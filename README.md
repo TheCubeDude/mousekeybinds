@@ -28,6 +28,8 @@ Presets
 
 ## Building
 
+Install [Poetry](https://python-poetry.org/docs/#installation), then run
+
 ```sh
 poetry build
 ```
